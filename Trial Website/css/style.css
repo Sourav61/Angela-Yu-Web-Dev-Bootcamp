@@ -1,24 +1,99 @@
+a {
+  color: #11999E;
+}
+
 body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
+  font-size: 100%;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #11999E;
+  color: #EAF6F6;
+  border-radius: 6px;
+  padding: 10px;
+
+}
+
+.bottom-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.bottom-container {
+  margin: 100px auto 50px;
+}
+
+.chillie-image {
+  border-radius: 100%;
+  /* height: 300px; */
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.comp-image {
+  border-radius: 100%;
+  /* height: 300px; */
+  width: 25%;
+  float: right;
+  margin-left: 30px;
 }
 
 h1 {
-  margin-top: 0;
+  color: #66BFBF;
+  font-size: 5.625rem;
   font-family: 'Sacramento', cursive;
+  margin: 50px auto 0;
+  line-height: 2;
 }
 
 h2{
   font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
 }
 
 h3{
   font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+.hori-rule {
+  border-style: dotted;
+  width: 3%;
+  border-width: 4px;
+  border-top: 2px;
+  border-color: #EAF6F6;
+  margin: 50px auto;
+}
+
+.image {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.para {
+  color: #40514E;
+  margin: auto 28.125rem 40px;
+  line-height: 2;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px;
+  text-align: left;
+  line-height: 2;
 }
 
 .top-container {
-  background-color: lightblue;
+  background-color: #EAF6F6;
   /* width: 200px;
   height: 200px;
   border: solid 10px;
@@ -27,30 +102,23 @@ h3{
   padding-top: 100px;
 }
 
-.middle-container{
-  background-color: orange;
-  width: 200px;
-  height: 200px;
-  /* margin-left: 260px;
-  border: solid 20px; */
+/* .middle-container{
+
 }
 
 .bottom-container {
-  background-color: red;
-  width: 200px;
-  height: 200px;
-  /* margin-left: 500px;
-  border: solid 10px; */
-}
+
+} */
 
 .top-cloud {
   position: absolute;
   right: 300px;
   top: 50px;
 }
-
-.bottom-cloud{
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
+/* .chillie-image-desc {
+  clear: left;
 }
+
+.comp-image-desc {
+  clear: right;
+} */
