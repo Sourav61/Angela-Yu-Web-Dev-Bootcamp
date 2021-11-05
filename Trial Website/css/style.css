@@ -15,7 +15,7 @@ body {
   color: #EAF6F6;
   border-radius: 6px;
   padding: 10px;
-
+  font-family: sans-serif;
 }
 
 .bottom-cloud{
@@ -25,7 +25,9 @@ body {
 }
 
 .bottom-container {
-  margin: 100px auto 50px;
+  margin-top: 80px;
+  padding: 40px 0;
+  background-color: #66BFBF;
 }
 
 .chillie-image {
@@ -42,6 +44,16 @@ body {
   width: 25%;
   float: right;
   margin-left: 30px;
+}
+
+.connect {
+  margin: 30px auto 60px;
+}
+
+.footer-link {
+  text-decoration: none;
+  margin: 20px;
+  color: #11999E;
 }
 
 h1 {
@@ -62,6 +74,7 @@ h2{
 h3{
   font-family: 'Montserrat', sans-serif;
   color: #11999E;
+  margin: 30px 0;
 }
 
 .hori-rule {
@@ -69,14 +82,16 @@ h3{
   width: 3%;
   border-width: 4px;
   border-top: 2px;
-  border-color: #EAF6F6;
+  border-color: #c8d5d5;
   margin: 50px auto;
+
 }
 
 .image {
   border-radius: 100%;
   height: 200px;
   width: 200px;
+  margin-top: 50px;
 }
 
 .para {
@@ -100,6 +115,11 @@ h3{
   padding: 20px; */
   position: relative;
   padding-top: 100px;
+}
+
+.trademark {
+  margin-top: 30px;
+  color: #EAF6F6;
 }
 
 /* .middle-container{
