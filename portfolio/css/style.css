@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body,
+  ul, ol, li,
+  h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+  }
+
+  html{
+    background-color:greenyellow;
+    background-size: cover;
+  }
+  
+  body {
+    font-family: "Lucida Grande";
+}
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    padding: 0 10px;
+    margin-top: 0px;
+    text-align: left;
+    color:darkslateblue;
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 10px 0;
+    
+    color: rgb(153, 121, 51);
+    text-align: left;
+    margin-right: 900px;
+    height: 100px;
+    background-repeat: no-repeat;  
+  }
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    font-family: 'Times New Roman';
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper h3{
+    opacity: 0.4;
+    margin-bottom: 3px;
+    color:rgb(54, 14, 233);
+  }
+  
+  .image{
+      display: block;
+      /*object-position: top;*/
+      height: 100px;
+      width: 100px;
+      position: top;
+      margin-left: 1100px;
+      margin-right: 1500px;
+  }
+  .btn {
+    padding: 12px 24px;
+    color: rgb(38, 0, 255);
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    margin-left: 800px;
+    text-align: center;
+  }
+  .name{
+    margin-left: 1060px;
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(5 46 75 / 90%);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 10px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: rgb(0, 255, 128);
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: darkmagenta;
+    text-align: left;
+  }
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: darkcyan;
+  }
+  .btn-wrapper {
+    text-align: center;
+    margin-left: 170px;
+    /*margin: 20px ;*/
+  }
+  .center{
+    text-align: left;
+    margin-right: 400px;
+  }
+  .hobbies{
+    text-align: left;
+    font-size: medium;
+    color:red;
+    margin-bottom: 10px
+  }
+  .hobbies h2{
+
+    font-size:80;
+    color:darkgreen;
+  }
+  .skills{
+    text-align: left;
+    color:salmon;
+    margin-bottom: 10px
+  }
+  .linkedin {
+    background-color: #6940da83;
+    margin-right: 10px;
+  }
+  .heading h3 {
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .heading span{
+
+    text-align: left;
+  }
+  
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: left;
+    margin-right: 1050px;
+    background-color: greenyellow;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color:#da2607 ;
+    cursor: pointer;
+    box-shadow: 0 7px #eb7303;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  footer p {
+    color: #050103;
+    font-size: 15px;
+  }
+  
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  
+  span.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+  .certificates{
+    color:palevioletred;
+    font-size:24;
+  }
+
+  .Projects{
+    color:purple;
+    margin-bottom: 10px
+  }
+
+  .Portfolio{
+    color:darkorange;
+    font-size:100;
+    margin-top:20px;
+  }
+  .center{
+    margin-bottom: 10px;
+  } 
+  .skills h2{
+
+    color:rgb(61, 114, 139);
+  }
+
+  .btn-wrapper a{
+    margin-left: 1100 px;
+  }
