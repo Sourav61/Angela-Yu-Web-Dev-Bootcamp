@@ -2,12 +2,39 @@
   background-color: #ff4c68;
 }
 
-.container-fluid {
-  padding: 3% 15%;
+.btn {
+  margin: 0 5px;
 }
 
-.h1 {
-  font-family: "Montserrat-black";
+.container-fluid {
+  padding: 3% 15%;
+  height: 50rem;
+}
+
+h1 {
+  font-family: "Ubuntu";
   font-size: 3rem;
   line-height: 1.5;
+  color: white;
+  margin: 50px auto 20px;
+  font-weight: bolder;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  right: 15px;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  margin: 0 15px;
+}
+
+.rotate {
+  background-color: inherit;
+  height: 500px;
+  margin: 50px auto 10px;
+  transform: rotate(30deg);
 }
