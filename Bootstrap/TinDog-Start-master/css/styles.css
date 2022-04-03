@@ -113,3 +113,20 @@ p {
   /* margin: 50px auto 10px; */
   transform: rotate(25deg);
 }
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+@media screen and (max-width: 426px) {
+  .smal-container {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
