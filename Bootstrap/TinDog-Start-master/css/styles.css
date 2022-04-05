@@ -1,5 +1,8 @@
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 #press {
@@ -11,7 +14,6 @@
 #title {
   background-color: #ff4c68;
   color: #fff;
-  /* height: 600px; */
 }
 
 /* Testimonial Section */
@@ -34,9 +36,8 @@ body {
   margin: 5% 3% 5% 0;
 }
 
-.container-fluid {
+#title .container-fluid {
   padding: 3% 15%;
-  height: 50rem;
 }
 
 .feature {
@@ -110,8 +111,10 @@ p {
 .title-image {
   /* background-color: inherit; */
   width: 60%;
+  right: 30%;
   /* margin: 50px auto 10px; */
   transform: rotate(25deg);
+  position: absolute;
 }
 
 /* Pricing Section */
