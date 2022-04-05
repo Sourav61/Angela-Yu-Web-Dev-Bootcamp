@@ -127,6 +127,17 @@ p {
   padding: 3% 2%;
 }
 
+@media (max-width: 1028px) {
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .smal-container {
     flex: 0 0 100% !important;
