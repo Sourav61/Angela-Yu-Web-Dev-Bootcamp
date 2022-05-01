@@ -8,8 +8,22 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get("/", function (req, res) {
-    console.log("path", __dirname);
+    // console.log("path", __dirname);
     res.sendFile(__dirname + "/index.html");
+})
+
+app.get("/bmi", function (req, res) {
+    // console.log("path", __dirname);
+    res.sendFile(__dirname + "/bmiCalculator.html");
+})
+
+app.post("/bmi", function (req, res) {
+    var height = parseFloat(req.body.h);
+    var weight = parseFloat(req.body.w);
+
+    var bmi = weight / (height * height);
+
+    res.send("Your BMI is: " + bmi);
 })
 
 app.post("/", function (req, res) {
