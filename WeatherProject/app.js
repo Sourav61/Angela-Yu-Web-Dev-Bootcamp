@@ -4,21 +4,20 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get("/", function (req, res) {
-    res.sendFile(__dirname+"/index.html")
-    
+    res.sendFile(__dirname + "/index.html")
     // res.send("Server is up and running.");
 })
 
-app.post("/", function(req,res){
+app.post("/", function (req, res) {
     console.log(req.body.cityName);
     console.log("Post received");
-    const query=req.body.cityName;
-    const apiKey="09b567d098796859509b0f3595116430";
+    const query = req.body.cityName;
+    const apiKey = "09b567d098796859509b0f3595116430";
     const unit = "metric";
-    const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+apiKey+"&units="+unit;
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit;
     https.get(url, function (response) {
         console.log("resp", response.statusCode);
 
@@ -32,7 +31,7 @@ app.post("/", function(req,res){
 
             const city = weatherData.name;
 
-            const temp = weatherData.main.temp;
+            const temp = weatherData?.main?.temp;
             // console.log(temp);
 
             const description = weatherData.weather[0].description;
