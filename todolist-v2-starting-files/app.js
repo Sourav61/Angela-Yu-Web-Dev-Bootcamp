@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB");
+mongoose.connect("mongodb+srv://admin-sp:Test123@cluster0.jezlmow.mongodb.net/todolistDB");
 
 const itemsSchema = {
   name: String
@@ -57,7 +57,7 @@ app.get("/", function (req, res) {
         if (err) {
           console.log(err);
         } else {
-          console.log("Successfully saved default items to DB.")
+          // console.log("Successfully saved default items to DB.")
         }
       })
       res.redirect("/");
@@ -106,7 +106,7 @@ app.post("/delete", function (req, res) {
   if (listName == "Today") {
     Item.findByIdAndRemove(checkedItemId, function (err) {
       if (!err) {
-        console.log("Successfully deleted checked item!");
+        // console.log("Successfully deleted checked item!");
         res.redirect("/");
       }
     })
@@ -138,7 +138,7 @@ app.get("/:customListName", function (req, res) {
         });
         list.save();
         res.redirect("/" + customListName);
-        console.log("Doesn't exist");
+        // console.log("Doesn't exist");
       } else {
         res.render("list", { listTitle: foundList.name, newListItems: foundList.items });
       }
@@ -151,6 +151,12 @@ app.get("/about", function (req, res) {
   res.render("about");
 });
 
-app.listen(3000, function () {
-  console.log("Server started on port 3000");
+let port = process.env.PORT;
+
+if(port == null || port == ""){
+  port = 3000;
+}
+
+app.listen(port, function () {
+  console.log("Server has successfully started!");
 });
