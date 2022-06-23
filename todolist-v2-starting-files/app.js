@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const date = require(__dirname + "/date.js");
 const _ = require("lodash");
+require('dotenv').config();
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-sp:Test123@cluster0.jezlmow.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://admin-sp:"+process.env.PASS+"@cluster0.jezlmow.mongodb.net/todolistDB");
 
 const itemsSchema = {
   name: String
@@ -57,7 +58,7 @@ app.get("/", function (req, res) {
         if (err) {
           console.log(err);
         } else {
-          // console.log("Successfully saved default items to DB.")
+          console.log("Successfully saved default items to DB.")
         }
       })
       res.redirect("/");
@@ -106,7 +107,7 @@ app.post("/delete", function (req, res) {
   if (listName == "Today") {
     Item.findByIdAndRemove(checkedItemId, function (err) {
       if (!err) {
-        // console.log("Successfully deleted checked item!");
+        console.log("Successfully deleted checked item!");
         res.redirect("/");
       }
     })
@@ -138,7 +139,7 @@ app.get("/:customListName", function (req, res) {
         });
         list.save();
         res.redirect("/" + customListName);
-        // console.log("Doesn't exist");
+        console.log("Doesn't exist");
       } else {
         res.render("list", { listTitle: foundList.name, newListItems: foundList.items });
       }
