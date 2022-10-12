@@ -1,16 +1,20 @@
 {
-  "name": "keeper-app-part-1-starting",
+  "name": "using-pre-built-react-components",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-scripts": "3.2.0"
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest"
   },
   "devDependencies": {
-    "typescript": "3.3.3"
+    "typescript": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
